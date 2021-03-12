@@ -128,7 +128,7 @@ public class FindPeopleActivity extends AppCompatActivity {
 
     public static class FindFriendsViewHolder extends RecyclerView.ViewHolder {
         TextView userName;
-        Button call;
+        Button call,msg;
         ImageView profileImage;
         RelativeLayout cardView;
 
@@ -137,10 +137,12 @@ public class FindPeopleActivity extends AppCompatActivity {
 
             userName = itemView.findViewById(R.id.name_contacts);
             call = itemView.findViewById(R.id.call_btn);
+            msg = itemView.findViewById(R.id.msg_btn);
             profileImage = itemView.findViewById(R.id.image_contacts);
             cardView = itemView.findViewById(R.id.card_view1);
 
             call.setVisibility(View.GONE);
+            msg.setVisibility(View.GONE);
 
 
 
