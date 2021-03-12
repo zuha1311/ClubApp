@@ -140,6 +140,17 @@ public class ContentsActivity extends AppCompatActivity {
                             }
                         });
 
+                        holder.msg.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(ContentsActivity.this,ChatActivity.class);
+                                intent.putExtra("msg_user_id", listUserId);
+                                intent.putExtra("msg_user_name", userName);
+                                startActivity(intent);
+
+                            }
+                        });
+
                     }
 
                     @Override
@@ -213,7 +224,7 @@ public class ContentsActivity extends AppCompatActivity {
 
     public static class ContactsViewHolder extends RecyclerView.ViewHolder {
         TextView userNameTxt;
-        Button call;
+        Button call,msg;
         ImageView profileImageView;
 
         public ContactsViewHolder(@NonNull View itemView) {
@@ -222,6 +233,7 @@ public class ContentsActivity extends AppCompatActivity {
             userNameTxt = itemView.findViewById(R.id.name_contacts);
             call = itemView.findViewById(R.id.call_btn);
             profileImageView = itemView.findViewById(R.id.image_contacts);
+            msg = itemView.findViewById(R.id.msg_btn);
 
         }
     }

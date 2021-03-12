@@ -41,13 +41,29 @@
             android:layout_below="@id/name_contacts"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="65dp"
-            android:layout_marginRight="65dp"
+
             android:layout_marginBottom="14dp"
             android:padding="5dp"
             android:background="@color/colorPrimary"
             android:drawableTop="@drawable/video_call"
             android:drawableTint="@android:color/white"
-            android:layout_centerHorizontal="true"
+
+
+            />
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="43dp"
+            android:id="@+id/msg_btn"
+            android:layout_below="@id/name_contacts"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginBottom="14dp"
+            android:padding="5dp"
+            android:background="@color/colorPrimary"
+            android:drawableTop="@drawable/ic_baseline_chat_24"
+            android:drawablePadding="20dp"
+           android:layout_toRightOf="@+id/call_btn"
 
             />
 
