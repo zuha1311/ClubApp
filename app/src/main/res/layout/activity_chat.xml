@@ -28,6 +28,7 @@
         android:layout_marginTop="10dp"
         android:layout_above="@+id/sendMsgRelLayout"
         android:id="@+id/chatRecyclerView"
+        android:layout_margin="10dp"
         >
 
     </androidx.recyclerview.widget.RecyclerView>
